@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_iconmonstr_smartphone_4"
+        android:title="@string/menu_home" />
+    <item
+        android:id="@+id/nav_bottom_calPage"
+        android:icon="@drawable/ic_iconmonstr_calculator_5"
+        android:title="@string/bottom_calculator" />
+</menu>

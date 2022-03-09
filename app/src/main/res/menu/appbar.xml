@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_about"
+        android:title="@string/top_menu_about"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_share"
+        android:icon="@drawable/ic_iconmonstr_share_11"
+        android:title="@string/top_share"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_like"
+        android:icon="@drawable/ic_iconmonstr_thumb_10"
+        android:title="@string/top_like"
+        app:showAsAction="ifRoom" />
+</menu>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_home">
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.and.pepapig.Home_page"
+        android:label="@string/homepage_fragment"
+        tools:layout="@layout/activity_home_page" >
+        <action
+            android:id="@+id/action_nav_home_to_user2"
+            app:destination="@id/nav_user" />
+        <action
+            android:id="@+id/action_nav_home_to_article"
+            app:destination="@id/nav_article" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_bottom_calPage"
+        android:name="com.and.pepapig.Calculator"
+        android:label="@string/calculator_fragment"
+        tools:layout="@layout/activity_calculator" />
+    <fragment
+        android:id="@+id/nav_user"
+        android:name="com.and.pepapig.User"
+        android:label="fragment_user"
+        tools:layout="@layout/fragment_user" >
+        <action
+            android:id="@+id/action_user2_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_article"
+        android:name="com.and.pepapig.Article"
+        android:label="fragment_article"
+        tools:layout="@layout/fragment_article" >
+        <action
+            android:id="@+id/action_article_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+</navigation>
