@@ -25,7 +25,6 @@ public class FirstFragment extends Fragment {
     ) {
 
         binding = FragmentFirstBinding.inflate(inflater, container, false);
-        Toast.makeText(getActivity(), getLifecycle().getCurrentState().toString(), Toast.LENGTH_SHORT).show();
         return binding.getRoot();
 
     }

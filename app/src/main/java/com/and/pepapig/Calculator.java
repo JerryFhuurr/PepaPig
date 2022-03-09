@@ -7,6 +7,7 @@ import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -141,19 +142,24 @@ public class Calculator extends AppCompatActivity {
                 }
                 int ai = Integer.parseInt(a);
 
-                //TODO 添加历史记录功能
+                String final_express = "";
+
                 try {
                     int bi = Integer.parseInt(b);
                     if (result.charAt(i) == '+') {
                         r = ai + bi;
                         String final_result = String.valueOf(r);
                         rv.setText(final_result);
+                        final_express = result + " = " +  final_result; // 可作为历史记录保存
+                        Log.i("result", final_express);
                         sign_time = 0;
                         break;
                     } else if (result.charAt(i) == '-') {
                         r = ai - bi;
                         String final_result = String.valueOf(r);
                         rv.setText(final_result);
+                        final_express = result + " = " +  final_result;
+                        Log.i("result", final_express);
                         sign_time = 0;
                         break;
                     }
