@@ -15,6 +15,9 @@
         <action
             android:id="@+id/action_nav_home_to_article"
             app:destination="@id/nav_article" />
+        <action
+            android:id="@+id/action_nav_home_to_about2"
+            app:destination="@id/nav_about" />
     </fragment>
 
     <fragment
@@ -25,7 +28,7 @@
     <fragment
         android:id="@+id/nav_user"
         android:name="com.and.pepapig.User"
-        android:label="fragment_user"
+        android:label="User"
         tools:layout="@layout/fragment_user" >
         <action
             android:id="@+id/action_user2_to_nav_home"
@@ -34,10 +37,19 @@
     <fragment
         android:id="@+id/nav_article"
         android:name="com.and.pepapig.Article"
-        android:label="fragment_article"
+        android:label="Article"
         tools:layout="@layout/fragment_article" >
         <action
             android:id="@+id/action_article_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.and.pepapig.About"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" >
+        <action
+            android:id="@+id/action_about2_to_nav_home"
             app:destination="@id/nav_home" />
     </fragment>
 </navigation>

@@ -89,14 +89,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int itemId = item.getItemId();
-
-        if (itemId == R.id.action_about) {
-            getSupportFragmentManager()
-                    .beginTransaction()
-                    .replace(R.id.nav_host_fragment, new About(), null)
-                    .addToBackStack(null)
-                    .commit();
-        }  else if (itemId == R.id.action_share) {
+        if (itemId == R.id.action_share) {
             Toast.makeText(MainActivity.this, R.string.top_toast_share, Toast.LENGTH_LONG).show();
             Intent intent_share = new Intent(Intent.ACTION_SEND);
             intent_share.setType("text/plain");
