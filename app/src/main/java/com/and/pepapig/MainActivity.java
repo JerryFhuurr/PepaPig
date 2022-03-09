@@ -1,5 +1,6 @@
 package com.and.pepapig;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
@@ -9,6 +10,8 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -32,6 +35,19 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        final AlertDialog.Builder alert = new AlertDialog.Builder(MainActivity.this);
+        alert.setIcon(R.drawable.ic_iconmonstr_warning_2);
+        alert.setTitle(R.string.home_dia_title);
+        alert.setMessage(R.string.homepage_dia_info);
+        alert.setPositiveButton(R.string.home_dia_ok, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                dialogInterface.cancel();
+            }
+        });
+        alert.show();
+
         initViews();
         setupNavigation();
     }
@@ -98,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
             intent_share.putExtra(Intent.EXTRA_TEXT, "Hello world");
             startActivity(intent_share);
         } else if (itemId == R.id.action_like) {
-            if (count <= 1) {
+            if (count < 1) {
                 item.setIcon(R.drawable.ic_iconmonstr_thumb_15);
                 Toast.makeText(MainActivity.this, R.string.top_toast_like, Toast.LENGTH_SHORT).show();
                 count++;

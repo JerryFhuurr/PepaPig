@@ -5,6 +5,9 @@
     <!-- home page -->
     <string name="homepage_welcome">Welcome! This is home page</string>
     <string name="homepage_fragment">Homepage</string>
+    <string name="home_dia_title">Attention</string>
+    <string name="homepage_dia_info">This app is only for test Android components, not for functions</string>
+    <string name="home_dia_ok">Got it</string>
     <!-- calculator page -->
     <string name="calculator_fragment">Calculator</string>
     <!-- appbar -->
