@@ -20,7 +20,6 @@ import com.google.android.material.snackbar.Snackbar;
 
 public class About extends Fragment {
 
-    TextView my_email;
     TextView git;
     FloatingActionButton fab;
 
@@ -35,24 +34,11 @@ public class About extends Fragment {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_about, container, false);
 
-        my_email = v.findViewById(R.id.my_email);
         git = v.findViewById(R.id.git_link);
         fab = v.findViewById(R.id.fab);
 
         fabOnClick(fab, v);
 
-        my_email.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getActivity(), R.string.about_send_email, Toast.LENGTH_LONG).show();
-                Intent intent_share = new Intent(Intent.ACTION_SEND);
-                intent_share.setType("text/plain");
-                intent_share.putExtra(Intent.EXTRA_EMAIL, new String[]{"1063128177@qq.com"});
-                intent_share.putExtra(Intent.EXTRA_SUBJECT, "This is a test email to you");
-                intent_share.putExtra(Intent.EXTRA_TEXT, "Hello world");
-                startActivity(intent_share);
-            }
-        });
         git.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View view) {

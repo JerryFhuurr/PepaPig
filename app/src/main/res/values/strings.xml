@@ -151,11 +151,19 @@
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">History</string>
+    <string name="next">Write !</string>
     <string name="previous">Back</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-
+    <!-- calculator 2 -->
     <string name="calculator_error_toast">Please enter correct expression !</string>
+    <string name="calculator_second_info">Will add history function in the future</string>
+    <string name="calculator_second_info2">Try to type something into the field, it will show up on the result view in calculator :</string>
+    <string name="calculator_send_btn">Send</string>
+    <string name="calculator_second_info3">
+        "Also, you can write something below and send it to me. \n"
+        "Of course, send it through email  XD"
+        "\n\n"
+    </string>
+    <string name="edit_hint">Don\'t write too much !</string>
+    <string name="toast_sent">Text send !</string>
 </resources>

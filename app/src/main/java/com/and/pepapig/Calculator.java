@@ -140,6 +140,8 @@ public class Calculator extends AppCompatActivity {
                     b += result.charAt(k);
                 }
                 int ai = Integer.parseInt(a);
+
+                //TODO 添加历史记录功能
                 try {
                     int bi = Integer.parseInt(b);
                     if (result.charAt(i) == '+') {
