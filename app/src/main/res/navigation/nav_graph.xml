@@ -21,10 +21,10 @@
     </fragment>
 
     <fragment
-        android:id="@+id/nav_bottom_calPage"
-        android:name="com.and.pepapig.Calculator"
-        android:label="@string/calculator_fragment"
-        tools:layout="@layout/activity_calculator" />
+        android:id="@+id/nav_bottom_mapPage"
+        android:name="com.and.pepapig.MapsFragment"
+        android:label="@string/bottom_map"
+        tools:layout="@layout/fragment_maps" />
     <fragment
         android:id="@+id/nav_user"
         android:name="com.and.pepapig.User"

@@ -31,11 +31,12 @@
     <string name="side_header_username">Pepa pig</string>
     <string name="side_header_email">demo@test.com</string>
     <!-- bottom menu -->
-    <string name="bottom_calculator">Calculator</string>
+    <string name="bottom_map">Map</string>
 
+    <!-- map -->
+    <string name="map_text">Blank page, would add Google map API later</string>
 
     <!-- article-->
-
     <string name="article_title">Demo article</string>
     <string name="article_back_top">Back top</string>
     <string name="next_page">Next page</string>
@@ -141,4 +142,6 @@
     <string name="about_snack1">Is it fun ?</string>
     <string name="about_snack2">FUN !</string>
     <string name="about_snack_toast">I made an easter egg somewhere, can you find it ??</string>
+    <string name="about_send_email">Oh, you want to send me an email :-) ?</string>
+    <string name="about_git_toast">Link copied to clipboard</string>
 </resources>

@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         setSupportActionBar(toolbar);
 
-        configuration = new AppBarConfiguration.Builder(R.id.nav_home, R.id.nav_bottom_calPage)
+        configuration = new AppBarConfiguration.Builder(R.id.nav_home, R.id.nav_bottom_mapPage)
                 .setOpenableLayout(drawerLayout).build();
 
         NavigationUI.setupActionBarWithNavController(this, navController, configuration);
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
     private void setBottomNavigationView() {
         navController.addOnDestinationChangedListener((controller, destination, arguments) -> {
             final int id = destination.getId();
-            if (id == R.id.nav_home || id == R.id.nav_bottom_calPage) {
+            if (id == R.id.nav_home || id == R.id.nav_bottom_mapPage) {
                 bottomNavigationView.setVisibility(View.VISIBLE);
             } else {
                 bottomNavigationView.setVisibility(View.GONE);

@@ -1,5 +1,10 @@
 package com.and.pepapig;
 
+import android.content.ClipData;
+import android.content.ClipboardManager;
+import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -37,10 +42,32 @@ public class About extends Fragment {
 
         fabOnClick(fab, v);
 
+        my_email.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getActivity(), R.string.about_send_email, Toast.LENGTH_LONG).show();
+                Intent intent_share = new Intent(Intent.ACTION_SEND);
+                intent_share.setType("text/plain");
+                intent_share.putExtra(Intent.EXTRA_EMAIL, new String[]{"1063128177@qq.com"});
+                intent_share.putExtra(Intent.EXTRA_SUBJECT, "This is a test email to you");
+                intent_share.putExtra(Intent.EXTRA_TEXT, "Hello world");
+                startActivity(intent_share);
+            }
+        });
+        git.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+                ClipboardManager clipboardManager = (ClipboardManager) getContext().getSystemService(Context.CLIPBOARD_SERVICE);
+                ClipData clipData = ClipData.newPlainText("git_link", git.getText().toString());
+                clipboardManager.setPrimaryClip(clipData);
+                Toast.makeText(getActivity(), R.string.about_git_toast, Toast.LENGTH_LONG).show();
+                return false;
+            }
+        });
         return v;
     }
 
-    private void fabOnClick(FloatingActionButton button, View v){
+    private void fabOnClick(FloatingActionButton button, View v) {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
