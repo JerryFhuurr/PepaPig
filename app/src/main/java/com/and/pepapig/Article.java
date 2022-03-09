@@ -13,7 +13,6 @@ import android.widget.Button;
 public class Article extends Fragment {
 
     private Button back;
-    private Button next;
     private NestedScrollView scrollView;
     public Article() {
         // Required empty public constructor
@@ -26,7 +25,6 @@ public class Article extends Fragment {
         View v = inflater.inflate(R.layout.fragment_article, null);
 
         back = v.findViewById(R.id.back_top_btn);
-        next = v.findViewById(R.id.switch_next_page_btn);
         scrollView = v.findViewById(R.id.scrollView);
 
         back.setOnClickListener(new View.OnClickListener() {
@@ -45,8 +43,6 @@ public class Article extends Fragment {
                 });
             }
         });
-
-        //TODO 添加跳转页面的代码
 
         return v;
     }

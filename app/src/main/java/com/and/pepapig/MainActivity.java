@@ -98,11 +98,12 @@ public class MainActivity extends AppCompatActivity {
             intent_share.putExtra(Intent.EXTRA_TEXT, "Hello world");
             startActivity(intent_share);
         } else if (itemId == R.id.action_like) {
-            if (count <= 1){
+            if (count <= 1) {
                 item.setIcon(R.drawable.ic_iconmonstr_thumb_15);
                 Toast.makeText(MainActivity.this, R.string.top_toast_like, Toast.LENGTH_SHORT).show();
                 count++;
-            } else Toast.makeText(MainActivity.this, R.string.top_toast_like2, Toast.LENGTH_SHORT).show();
+            } else
+                Toast.makeText(MainActivity.this, R.string.top_toast_like2, Toast.LENGTH_SHORT).show();
         }
         return super.onOptionsItemSelected(item);
     }

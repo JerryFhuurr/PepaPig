@@ -18,6 +18,9 @@
         <action
             android:id="@+id/action_nav_home_to_about2"
             app:destination="@id/nav_about" />
+        <action
+            android:id="@+id/action_nav_home_to_calculator"
+            app:destination="@id/nav_calculator" />
     </fragment>
 
     <fragment
@@ -52,4 +55,9 @@
             android:id="@+id/action_about2_to_nav_home"
             app:destination="@id/nav_home" />
     </fragment>
+    <activity
+        android:id="@+id/nav_calculator"
+        android:name="com.and.pepapig.Calculator"
+        android:label="activity_calculator"
+        tools:layout="@layout/activity_calculator" />
 </navigation>

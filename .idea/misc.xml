@@ -7,13 +7,17 @@
         <entry key="..\:/Users/fhuur/OneDrive/AndroidCodes/PepaPig/app/src/main/res/layout/activity_home_page.xml" value="0.3292572463768116" />
         <entry key="..\:/Users/fhuur/OneDrive/AndroidCodes/PepaPig/app/src/main/res/layout/activity_main.xml" value="0.32971014492753625" />
         <entry key="..\:/Users/fhuur/OneDrive/AndroidCodes/PepaPig/app/src/main/res/layout/activity_user.xml" value="0.32971014492753625" />
+        <entry key="..\:/Users/fhuur/OneDrive/AndroidCodes/PepaPig/app/src/main/res/layout/content_calculator.xml" value="0.2672239108409321" />
         <entry key="..\:/Users/fhuur/OneDrive/AndroidCodes/PepaPig/app/src/main/res/layout/fragment_about.xml" value="0.425" />
-        <entry key="..\:/Users/fhuur/OneDrive/AndroidCodes/PepaPig/app/src/main/res/layout/fragment_article.xml" value="0.1" />
+        <entry key="..\:/Users/fhuur/OneDrive/AndroidCodes/PepaPig/app/src/main/res/layout/fragment_article.xml" value="0.2672239108409321" />
+        <entry key="..\:/Users/fhuur/OneDrive/AndroidCodes/PepaPig/app/src/main/res/layout/fragment_article_second.xml" value="0.2672239108409321" />
         <entry key="..\:/Users/fhuur/OneDrive/AndroidCodes/PepaPig/app/src/main/res/layout/fragment_calculator.xml" value="0.2672239108409321" />
+        <entry key="..\:/Users/fhuur/OneDrive/AndroidCodes/PepaPig/app/src/main/res/layout/fragment_first.xml" value="0.5" />
         <entry key="..\:/Users/fhuur/OneDrive/AndroidCodes/PepaPig/app/src/main/res/layout/fragment_gallery.xml" value="0.2672239108409321" />
         <entry key="..\:/Users/fhuur/OneDrive/AndroidCodes/PepaPig/app/src/main/res/layout/fragment_item.xml" value="0.2672239108409321" />
         <entry key="..\:/Users/fhuur/OneDrive/AndroidCodes/PepaPig/app/src/main/res/layout/fragment_item_list.xml" value="0.2601317122593718" />
         <entry key="..\:/Users/fhuur/OneDrive/AndroidCodes/PepaPig/app/src/main/res/layout/fragment_maps.xml" value="0.2672239108409321" />
+        <entry key="..\:/Users/fhuur/OneDrive/AndroidCodes/PepaPig/app/src/main/res/layout/fragment_second.xml" value="0.2672239108409321" />
         <entry key="..\:/Users/fhuur/OneDrive/AndroidCodes/PepaPig/app/src/main/res/layout/fragment_user.xml" value="0.2672239108409321" />
         <entry key="..\:/Users/fhuur/OneDrive/AndroidCodes/PepaPig/app/src/main/res/layout/nav_menu_header.xml" value="0.5494791666666666" />
         <entry key="..\:/Users/fhuur/OneDrive/AndroidCodes/PepaPig/app/src/main/res/menu/appbar.xml" value="0.5314814814814814" />
