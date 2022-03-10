@@ -202,4 +202,5 @@
     <string name="login_dialog_header">Warning</string>
     <string name="login_dialog_body">This view doesn\'t have any functions of logging !</string>
 
+    <string name="image_desc" translatable="false">User icon</string>
 </resources>
