@@ -21,6 +21,9 @@
         <action
             android:id="@+id/action_nav_home_to_calculator"
             app:destination="@id/nav_calculator" />
+        <action
+            android:id="@+id/action_nav_home_to_settings"
+            app:destination="@id/nav_settings" />
     </fragment>
 
     <fragment
@@ -60,4 +63,13 @@
         android:name="com.and.pepapig.Calculator"
         android:label="activity_calculator"
         tools:layout="@layout/activity_calculator" />
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.and.pepapig.Settings"
+        android:label="@string/side_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settings_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
 </navigation>

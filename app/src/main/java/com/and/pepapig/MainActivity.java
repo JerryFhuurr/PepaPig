@@ -13,10 +13,12 @@ import androidx.navigation.ui.NavigationUI;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.baidu.mapapi.map.MapStatusUpdate;
@@ -25,15 +27,17 @@ import com.baidu.mapapi.model.LatLng;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 
-public class MainActivity extends AppCompatActivity {
-    DrawerLayout drawerLayout;
-    NavigationView navigationView;
-    BottomNavigationView bottomNavigationView;
-    Toolbar toolbar;
-    NavController navController;
-    AppBarConfiguration configuration;
-    int count = 0;
+import java.util.Locale;
 
+public class MainActivity extends AppCompatActivity {
+    private DrawerLayout drawerLayout;
+    private NavigationView navigationView;
+    private BottomNavigationView bottomNavigationView;
+    private Toolbar toolbar;
+    private NavController navController;
+    private AppBarConfiguration configuration;
+    private int count = 0;
+    private TextView language_tag;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -127,4 +131,25 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    public void calculator_change_language(View v){
+        String system_language = Locale.getDefault().getLanguage();  // 获取当前语言
+        language_tag = findViewById(R.id.language_tag);
+
+        // 用if判断，是中文就切换成英文，反之亦然
+        if (system_language.equals("zh")){
+            language_tag.setText(R.string.s_language_text_en);
+            Locale.setDefault(Locale.ENGLISH);
+            Configuration configuration = getBaseContext().getResources().getConfiguration();
+            configuration.setLocale(Locale.ENGLISH);
+            getBaseContext().getResources().updateConfiguration(configuration, getBaseContext().getResources().getDisplayMetrics());
+            recreate();
+        } else {
+            language_tag.setText(R.string.s_language_text_cn);
+            Locale.setDefault(Locale.CHINESE);
+            Configuration configuration = getBaseContext().getResources().getConfiguration();
+            configuration.setLocale(Locale.CHINESE);
+            getBaseContext().getResources().updateConfiguration(configuration, getBaseContext().getResources().getDisplayMetrics());
+            recreate();
+        }
+    }
 }

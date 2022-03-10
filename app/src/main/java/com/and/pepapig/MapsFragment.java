@@ -71,6 +71,8 @@ public class MapsFragment extends Fragment {
         return v;
     }
 
+
+
     private void initView(){
         map = v.findViewById(R.id.mapView);
         normal = v.findViewById(R.id.map_normal);

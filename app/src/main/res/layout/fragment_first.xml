@@ -239,12 +239,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <Button
-            android:id="@+id/btn_cal_chang_lan"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:onClick="calculator_change_language"
-            android:text="@string/calculator_change_lan" />
 
     </LinearLayout>
 
