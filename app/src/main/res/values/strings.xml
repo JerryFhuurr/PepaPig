@@ -8,6 +8,9 @@
     <string name="home_dia_title">Attention</string>
     <string name="homepage_dia_info">This app is only for test Android components, not for functions</string>
     <string name="home_dia_ok">Got it</string>
+    <string name="home_dia_title2">Thank you</string>
+    <string name="home_dia_body">This is my first release app, thank you very much for your support !</string>
+    <string name="home_dia_toast">Enjoy and explore it !</string>
     <!-- calculator page -->
     <string name="calculator_fragment">Calculator</string>
     <!-- appbar -->

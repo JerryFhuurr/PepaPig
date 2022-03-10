@@ -4,11 +4,14 @@ import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,8 +23,9 @@ import com.google.android.material.snackbar.Snackbar;
 
 public class About extends Fragment {
 
-    TextView git;
-    FloatingActionButton fab;
+    private TextView git;
+    private FloatingActionButton fab;
+    private TextView versionText;
 
     public About() {
         // Required empty public constructor
@@ -33,6 +37,17 @@ public class About extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_about, container, false);
+
+        versionText = v.findViewById(R.id.version_textView);
+        PackageManager manager = getContext().getPackageManager();
+        String version = "Version ";
+        try{
+            PackageInfo info = manager.getPackageInfo(getContext().getPackageName(), 0);
+            version += String.valueOf(info.versionName);
+            versionText.setText(version);
+        } catch (PackageManager.NameNotFoundException e){
+            Log.e("version error", e.getMessage());
+        }
 
         git = v.findViewById(R.id.git_link);
         fab = v.findViewById(R.id.fab);

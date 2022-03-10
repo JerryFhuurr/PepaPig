@@ -69,4 +69,7 @@
     <string name="login_failed">登录失败</string>
     <string name="login_dialog_header">警告</string>
     <string name="login_dialog_body">这个登录页不含任何的登录功能！</string>
+    <string name="home_dia_title2">感谢您</string>
+    <string name="home_dia_body">这是我第一个发布的安卓应用，非常感谢您的支持！</string>
+    <string name="home_dia_toast">尽情探索这个应用吧！</string>
 </resources>
