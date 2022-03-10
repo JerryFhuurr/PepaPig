@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this, R.string.top_toast_share, Toast.LENGTH_LONG).show();
             Intent intent_share = new Intent(Intent.ACTION_SEND);
             intent_share.setType("text/plain");
-            intent_share.putExtra(Intent.EXTRA_EMAIL, new String[]{"gssquligqo@iubridge.com"});
+            intent_share.putExtra(Intent.EXTRA_EMAIL, new String[]{"fhuurr@163.com"});
             intent_share.putExtra(Intent.EXTRA_SUBJECT, "This is a test email to you");
             intent_share.putExtra(Intent.EXTRA_TEXT, "Hello world");
             startActivity(intent_share);
