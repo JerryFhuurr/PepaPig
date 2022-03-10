@@ -52,4 +52,10 @@
     <string name="s_language_change">切换应用语言</string>
     <string name="s_language_text_cn">中文</string>
     <string name="s_language_text_en">英文</string>
+    <string name="s_button_language_change">切换</string>
+    <string name="map_error1">服务器错误，请检查</string>
+    <string name="map_error2">网络错误，请检查</string>
+    <string name="map_error3">手机模式错误，请检查是否打开了飞行模式</string>
+    <string name="map_snackbar1">注意：此页仅为测试百度地图API，没有实现其他功能</string>
+    <string name="map_snack_toast">也许未来会改成谷歌的吧</string>
 </resources>

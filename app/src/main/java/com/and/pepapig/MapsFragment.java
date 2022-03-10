@@ -28,6 +28,7 @@ import com.baidu.mapapi.map.MyLocationConfiguration;
 import com.baidu.mapapi.map.MyLocationData;
 import com.baidu.mapapi.map.TextureMapView;
 import com.baidu.mapapi.model.LatLng;
+import com.google.android.material.snackbar.Snackbar;
 
 public class MapsFragment extends Fragment {
 
@@ -63,6 +64,7 @@ public class MapsFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         v = inflater.inflate(R.layout.fragment_maps, container, false);
+        noticeForMap();
         initView();
         init();
         //设置放大倍数
@@ -71,7 +73,15 @@ public class MapsFragment extends Fragment {
         return v;
     }
 
-
+    private void noticeForMap(){
+        Snackbar.make(v.findViewById(R.id.map_container), R.string.map_snackbar1, Snackbar.LENGTH_LONG)
+                .setAction("OK", new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Toast.makeText(getActivity(), R.string.map_snack_toast, Toast.LENGTH_LONG).show();
+                    }
+                }).show();
+    }
 
     private void initView(){
         map = v.findViewById(R.id.mapView);
@@ -261,12 +271,11 @@ public class MapsFragment extends Fragment {
                     Toast.makeText(getActivity(), location.getAddrStr(), Toast.LENGTH_SHORT).show();
 
                 } else if (location.getLocType() == BDLocation.TypeServerError) {
-                    //TODO 替换此处的text
-                    Toast.makeText(getActivity(), "服务器错误，请检查", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), R.string.map_error1, Toast.LENGTH_SHORT).show();
                 } else if (location.getLocType() == BDLocation.TypeNetWorkException) {
-                    Toast.makeText(getActivity(), "网络错误，请检查", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), R.string.map_error2, Toast.LENGTH_SHORT).show();
                 } else if (location.getLocType() == BDLocation.TypeCriteriaException) {
-                    Toast.makeText(getActivity(), "手机模式错误，请检查是否飞行", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), R.string.map_error3, Toast.LENGTH_SHORT).show();
                 }
             }
 

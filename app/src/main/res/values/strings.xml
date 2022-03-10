@@ -42,6 +42,11 @@
     <string name="map_reset">Relocate</string>
     <string name="map_normal">Normal map</string>
     <string name="map_satellite">Satellite map</string>
+    <string name="map_error1">Server error, please check</string>
+    <string name="map_error2">Network error, please check</string>
+    <string name="map_error3">The phone mode is wrong, please check whether the airplane mode is turned on</string>
+    <string name="map_snackbar1">NB: This page is just for testing Baidu map API </string>
+    <string name="map_snack_toast">Maybe I will use Google Map in the future</string>
 
     <!-- article-->
     <string name="article_title">Demo article</string>
