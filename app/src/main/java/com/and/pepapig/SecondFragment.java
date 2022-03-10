@@ -25,6 +25,7 @@ public class SecondFragment extends Fragment {
     private EditText multi;
     private Button send_plain;
     private Button send_email;
+
     @Override
     public View onCreateView(
             LayoutInflater inflater, ViewGroup container,
@@ -67,14 +68,19 @@ public class SecondFragment extends Fragment {
         send_email.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent_share = new Intent(Intent.ACTION_SEND);
-                intent_share.setType("text/plain");
-                intent_share.putExtra(Intent.EXTRA_EMAIL, new String[]{"1063128177@qq.com"});
-                intent_share.putExtra(Intent.EXTRA_SUBJECT, "A message to you");
-                intent_share.putExtra(Intent.EXTRA_TEXT, multi.getText());
-                startActivity(intent_share);
+                if (multi.getText().toString() != null) {
+                    Intent intent_share = new Intent(Intent.ACTION_SEND);
+                    intent_share.setType("text/plain");
+                    intent_share.putExtra(Intent.EXTRA_EMAIL, new String[]{"1063128177@qq.com"});
+                    intent_share.putExtra(Intent.EXTRA_SUBJECT, "A message to you");
+                    intent_share.putExtra(Intent.EXTRA_TEXT, multi.getText());
+                    startActivity(intent_share);
 
-                multi.setText("");
+                    multi.setText("");
+                } else {
+                    Toast.makeText(getActivity(), R.string.toast_calculator1, Toast.LENGTH_SHORT).show();
+                }
+
             }
         });
     }

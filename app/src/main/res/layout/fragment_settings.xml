@@ -14,8 +14,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="@string/s_group1_title"
-            android:textSize="45dp"
-            android:textColor="@color/black" />
+            android:textSize="45dp" />
         <View
             android:layout_width="match_parent"
             android:layout_height="15dp" />

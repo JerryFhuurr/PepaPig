@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
     private void setBottomNavigationView() {
         navController.addOnDestinationChangedListener((controller, destination, arguments) -> {
             final int id = destination.getId();
-            if (id == R.id.nav_home || id == R.id.nav_bottom_mapPage) {
+            if (id == R.id.nav_home || id == R.id.nav_bottom_mapPage || id == R.id.nav_user) {
                 bottomNavigationView.setVisibility(View.VISIBLE);
             } else {
                 bottomNavigationView.setVisibility(View.GONE);

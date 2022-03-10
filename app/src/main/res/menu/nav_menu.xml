@@ -12,9 +12,9 @@
         <menu>
             <group>
                 <item
-                    android:id="@+id/nav_user"
-                    android:icon="@drawable/ic_iconmonstr_user_2"
-                    android:title="@string/side_user" />
+                    android:id="@+id/nav_login"
+                    android:icon="@drawable/ic_iconmonstr_login"
+                    android:title="@string/bottom_login" />
                 <item
                     android:id="@+id/nav_article"
                     android:icon="@drawable/ic_iconmonstr_file_2"

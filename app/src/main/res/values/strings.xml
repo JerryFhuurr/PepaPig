@@ -13,6 +13,7 @@
     <string name="home_dia_toast">Enjoy and explore it !</string>
     <!-- calculator page -->
     <string name="calculator_fragment">Calculator</string>
+    <string name="toast_calculator1">I think I don\'t want to receive an empty email :-(</string>
     <!-- appbar -->
     <string name="top_share">Share</string>
     <string name="top_like">Like</string>

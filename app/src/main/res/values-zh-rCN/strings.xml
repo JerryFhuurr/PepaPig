@@ -57,7 +57,7 @@
     <string name="map_error2">网络错误，请检查</string>
     <string name="map_error3">手机模式错误，请检查是否打开了飞行模式</string>
     <string name="map_snackbar1">注意：此页仅为测试百度地图API，没有实现其他功能</string>
-    <string name="map_snack_toast">也许未来会改成谷歌的吧</string>
+    <string name="map_snack_toast">也许未来会改成谷歌的吧 233</string>
     <string name="bottom_login">登录</string>
     <string name="prompt_email">邮箱</string>
     <string name="prompt_password">密码</string>
@@ -72,4 +72,5 @@
     <string name="home_dia_title2">感谢您</string>
     <string name="home_dia_body">这是我第一个发布的安卓应用，非常感谢您的支持！</string>
     <string name="home_dia_toast">尽情探索这个应用吧！</string>
+    <string name="toast_calculator1">我想我不会希望收到一封完全空白的邮件</string>
 </resources>
