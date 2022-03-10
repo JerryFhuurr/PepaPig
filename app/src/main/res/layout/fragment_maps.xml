@@ -11,28 +11,52 @@
         android:layout_height="match_parent">
 
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/map_text"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.75" />
-
         <com.baidu.mapapi.map.TextureMapView
             android:id="@+id/mapView"
             android:layout_width="333dp"
             android:layout_height="419dp"
+            android:layout_marginTop="80dp"
             android:clickable="true"
-            app:layout_constraintBottom_toTopOf="@+id/textView2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:weightSum="5"
+            app:layout_constraintTop_toBottomOf="@+id/mapView">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="0.5" />
+
+            <Button
+                android:id="@+id/map_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.75"
+                android:textSize="10dp"
+                android:onClick="mapButtonOnClick"
+                android:text="@string/map_normal" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="0.5" />
+
+            <Button
+                android:id="@+id/map_satellite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.75"
+                android:textSize="10dp"
+                android:onClick="mapButtonOnClick"
+                android:text="@string/map_satellite" />
+        </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

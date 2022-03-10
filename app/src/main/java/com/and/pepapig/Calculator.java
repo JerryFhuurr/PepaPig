@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -18,6 +19,8 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import com.and.pepapig.databinding.ActivityCalculatorBinding;
+
+import java.util.Locale;
 
 public class Calculator extends AppCompatActivity {
 
@@ -170,5 +173,12 @@ public class Calculator extends AppCompatActivity {
                 }
             }
         }
+    }
+
+    public void calculator_change_language(View v){
+        String system_language = Locale.getDefault().getLanguage();  // 获取当前语言
+
+        // 用if判断，是中文就切换成英文，反之亦然
+
     }
 }
