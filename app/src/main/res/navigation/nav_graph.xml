@@ -34,7 +34,7 @@
     <fragment
         android:id="@+id/nav_user"
         android:name="com.and.pepapig.User"
-        android:label="User"
+        android:label="@string/side_user"
         tools:layout="@layout/fragment_user" >
         <action
             android:id="@+id/action_user2_to_nav_home"
@@ -43,7 +43,7 @@
     <fragment
         android:id="@+id/nav_article"
         android:name="com.and.pepapig.Article"
-        android:label="Article"
+        android:label="@string/side_article"
         tools:layout="@layout/fragment_article" >
         <action
             android:id="@+id/action_article_to_nav_home"
@@ -52,7 +52,7 @@
     <fragment
         android:id="@+id/nav_about"
         android:name="com.and.pepapig.About"
-        android:label="fragment_about"
+        android:label="@string/side_about"
         tools:layout="@layout/fragment_about" >
         <action
             android:id="@+id/action_about2_to_nav_home"
@@ -72,4 +72,10 @@
             android:id="@+id/action_settings_to_nav_home"
             app:destination="@id/nav_home" />
     </fragment>
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.and.pepapig.ui.login.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login"/>
+
 </navigation>

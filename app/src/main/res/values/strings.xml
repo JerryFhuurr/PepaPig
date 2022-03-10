@@ -37,6 +37,7 @@
     <string name="side_header_email" translatable="false">demo@test.com</string>
     <!-- bottom menu -->
     <string name="bottom_map">Map</string>
+    <string name="bottom_login">Login</string>
 
     <!-- map -->
     <string name="map_reset">Relocate</string>
@@ -185,4 +186,16 @@
     <string name="s_button_language_change">Change</string>
     <string name="s_language_text_cn">CN</string>
     <string name="s_language_text_en">EN</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="login_dialog_header">Warning</string>
+    <string name="login_dialog_body">This view doesn\'t have any functions of logging !</string>
+
 </resources>

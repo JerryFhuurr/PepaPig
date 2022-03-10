@@ -8,4 +8,8 @@
         android:id="@+id/nav_bottom_mapPage"
         android:icon="@drawable/ic_iconmonstr_map_8"
         android:title="@string/bottom_map" />
+    <item
+        android:id="@+id/nav_login"
+        android:icon="@drawable/ic_iconmonstr_login"
+        android:title="@string/bottom_login" />
 </menu>

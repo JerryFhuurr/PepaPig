@@ -39,7 +39,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:defaultNavHost="true"
-                android:layout_weight="0.5"
+                android:layout_weight="0.6"
                 app:navGraph="@navigation/nav_graph" />
 
             <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -47,7 +47,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="?android:attr/windowBackground"
-                android:layout_weight="5.5"
+                android:layout_weight="5.4"
                 app:menu="@menu/nav_bottom"/>
 
         </LinearLayout>

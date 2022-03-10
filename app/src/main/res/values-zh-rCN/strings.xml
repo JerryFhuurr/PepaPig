@@ -58,4 +58,15 @@
     <string name="map_error3">手机模式错误，请检查是否打开了飞行模式</string>
     <string name="map_snackbar1">注意：此页仅为测试百度地图API，没有实现其他功能</string>
     <string name="map_snack_toast">也许未来会改成谷歌的吧</string>
+    <string name="bottom_login">登录</string>
+    <string name="prompt_email">邮箱</string>
+    <string name="prompt_password">密码</string>
+    <string name="action_sign_in">登录或注册</string>
+    <string name="action_sign_in_short">登录</string>
+    <string name="welcome">欢迎！</string>
+    <string name="invalid_username">用户名错误！</string>
+    <string name="invalid_password">输入至少5位的密码！</string>
+    <string name="login_failed">登录失败</string>
+    <string name="login_dialog_header">警告</string>
+    <string name="login_dialog_body">这个登录页不含任何的登录功能！</string>
 </resources>
