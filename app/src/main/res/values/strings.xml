@@ -185,6 +185,9 @@
     <string name="edit_warning">Not working !</string>
     <string name="toast_sent">Text send !</string>
 
+    <!-- calculator3 -->
+    <string name="cal_second_label" translatable="false">List demo</string>
+
     <!-- settings -->
     <string name="s_group1_title">Language</string>
     <string name="s_language_change">Change language</string>

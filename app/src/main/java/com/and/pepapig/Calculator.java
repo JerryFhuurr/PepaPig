@@ -18,9 +18,12 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.and.pepapig.databinding.ActivityCalculatorBinding;
 
+import java.util.ArrayList;
 import java.util.Locale;
 
 public class Calculator extends AppCompatActivity {
@@ -32,6 +35,9 @@ public class Calculator extends AppCompatActivity {
     private TextView rv;
     private CharSequence result = "";
     private int sign_time = 0;
+
+    private ListAdapter listAdapter;
+    private RecyclerView list;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +60,8 @@ public class Calculator extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
     }
 
     @Override
@@ -156,6 +164,8 @@ public class Calculator extends AppCompatActivity {
                         rv.setText(final_result);
                         final_express = result + " = " +  final_result; // 可作为历史记录保存
                         Log.i("result", final_express);
+                        CalculateResult result = new CalculateResult(final_express);
+                        ResultList.addResult(result);
                         sign_time = 0;
                         break;
                     } else if (result.charAt(i) == '-') {
@@ -164,6 +174,8 @@ public class Calculator extends AppCompatActivity {
                         rv.setText(final_result);
                         final_express = result + " = " +  final_result;
                         Log.i("result", final_express);
+                        CalculateResult result = new CalculateResult(final_express);
+                        ResultList.addResult(result);
                         sign_time = 0;
                         break;
                     }
