@@ -34,6 +34,15 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
         holder.name.setText(results.get(position).getExpression());
     }
 
+    public int getIndex(CalculateResult r){
+        for (int i = 0; i < results.size(); i++){
+            if (results.get(i).getExpression().equals(r.getExpression())){
+                return i + 1;
+            }
+        }
+        return -1;
+    }
+
     @Override
     public int getItemCount() {
         return results.size();

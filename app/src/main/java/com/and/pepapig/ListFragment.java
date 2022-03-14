@@ -39,7 +39,8 @@ public class ListFragment extends Fragment {
             ClipboardManager clipboardManager = (ClipboardManager) getContext().getSystemService(Context.CLIPBOARD_SERVICE);
             ClipData clipData = ClipData.newPlainText("expression", result.getExpression());
             clipboardManager.setPrimaryClip(clipData);
-            Toast.makeText(getActivity(), R.string.about_git_toast, Toast.LENGTH_LONG).show();
+            String message = "No." + adapter.getIndex(result) + " expression : " + getString(R.string.cal_history_toast );
+            Toast.makeText(getActivity(), message, Toast.LENGTH_LONG).show();
         });
         listView.setAdapter(adapter);
         return v;
