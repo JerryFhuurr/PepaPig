@@ -168,7 +168,7 @@
     <string name="first_fragment_label">Simple calculator</string>
     <string name="second_fragment_label">Writing page</string>
     <string name="next">Write !</string>
-    <string name="next2">List</string>
+    <string name="next2">History</string>
     <string name="previous">Back</string>
 
     <!-- calculator 2 -->
@@ -186,7 +186,8 @@
     <string name="toast_sent">Text send !</string>
 
     <!-- calculator3 -->
-    <string name="cal_second_label" translatable="false">List demo</string>
+    <string name="cal_second_label">History</string>
+    <string name="cal_history_toast">Expression copied !</string>
 
     <!-- settings -->
     <string name="s_group1_title">Language</string>

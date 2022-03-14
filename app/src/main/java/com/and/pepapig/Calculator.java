@@ -1,16 +1,16 @@
 package com.and.pepapig;
 
 import android.content.Intent;
-import android.content.res.Configuration;
 import android.os.Bundle;
 
-import com.google.android.material.snackbar.Snackbar;
+import com.and.pepapig.History.CalculateResult;
+import com.and.pepapig.History.ListAdapter;
+import com.and.pepapig.History.ResultList;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -18,13 +18,9 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.and.pepapig.databinding.ActivityCalculatorBinding;
-
-import java.util.ArrayList;
-import java.util.Locale;
 
 public class Calculator extends AppCompatActivity {
 
@@ -162,7 +158,7 @@ public class Calculator extends AppCompatActivity {
                         r = ai + bi;
                         String final_result = String.valueOf(r);
                         rv.setText(final_result);
-                        final_express = result + " = " +  final_result; // 可作为历史记录保存
+                        final_express = result + " = " +  final_result;
                         Log.i("result", final_express);
                         CalculateResult result = new CalculateResult(final_express);
                         ResultList.addResult(result);
