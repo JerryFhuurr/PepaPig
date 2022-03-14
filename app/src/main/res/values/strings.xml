@@ -168,6 +168,7 @@
     <string name="first_fragment_label">Simple calculator</string>
     <string name="second_fragment_label">Writing page</string>
     <string name="next">Write !</string>
+    <string name="next2">List</string>
     <string name="previous">Back</string>
 
     <!-- calculator 2 -->
